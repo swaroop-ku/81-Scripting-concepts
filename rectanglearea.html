@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area of rectangle</title>
+</head>
+<body>
+    <script>
+        class rectangle{
+            constructor(length,width){
+                this.length = length;
+                this.width = width;
+            }
+
+            area(){
+                let a = this.length*this.width;
+                this.display();
+                console.log("Area of rectangle:"+a);
+            }
+
+            display(){
+                console.log("length:"+this.length+" and width:"+this.width);
+            }
+        }
+
+        let length = parseFloat(prompt("Enter the length of rectangle:"));
+        let width = parseFloat(prompt("Enter the width of rectangle:"));
+        let r = new rectangle(length,width);
+        r.area();
+    </script>
+</body>
+</html>

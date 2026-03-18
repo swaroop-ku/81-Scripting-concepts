@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Keyboard characters printing</title>
+</head>
+<body>
+    <input type="text" onkeydown="Show()">
+    <p>Key Printed: <span id="s"></span></p>
+    <script>
+        function Show(){
+            let count = 0;
+            if(event.key >= 'a' && event.key <= 'z' || event.key >= 'A' && event.key <= 'Z'){
+                count++;
+                console.log(count)
+                document.getElementById("s").innerHTML = event.key;
+            }
+
+        }
+    </script>
+</body>
+</html>

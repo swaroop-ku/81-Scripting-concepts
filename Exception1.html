@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling in Js</title>
+</head>
+<body>
+    <script>
+        try{
+            let a = parseInt(prompt("Enter the numerator"))
+            let b = parseInt(prompt("Enter the denominator"))
+            if(b == 0){
+                throw new Error("Denominator cannot be zero");
+            }
+            alert(""+a/b)
+        }
+        catch(error){
+            alert(""+error.message)
+        }
+    </script>
+</body>
+</html>

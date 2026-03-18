@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exception Handling in Js</title>
+</head>
+<body>
+    <script>
+        try{
+            let username = prompt("Enter the username")
+            if(username == null || username.trim() == ""){
+                 throw new Error("It is empty");
+            }
+            alert("Username:"+username)
+        }
+        catch(error){
+            alert(""+error.message)
+        }
+    </script>
+</body>
+</html>
